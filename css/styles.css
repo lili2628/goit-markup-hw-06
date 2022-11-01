@@ -222,13 +222,22 @@ body{
 
     font-family: inherit;
     font-size: 16px;
-    letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;
 }
 
 .hero .buttons{
-    padding: 10px 32px;
+    letter-spacing: 0.03em;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.hero .buttons,
+.modal-submit.buttons,
+.mailing-btn.buttons
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     align-items: center;
@@ -280,7 +289,8 @@ body{
 }
 
 .features-subtitle,
-.community-text{
+.community-text,
+.mailing-text {
     margin-top: 0;
     
     font-weight: 700;
@@ -640,10 +650,11 @@ box-shadow 250ms var(--function-timing);
 
 .bottom-contact{
     display: flex;
+    max-width: 1200px;
 }
 
 .bottom-contact .part:not(:last-child){
-    margin-right: 70px;
+    margin-right: 93px;
 }
 
 .bottom,
@@ -660,7 +671,7 @@ box-shadow 250ms var(--function-timing);
 
 .connection{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 
     font-style: normal;
     font-size: 14px;
@@ -696,7 +707,8 @@ box-shadow 250ms var(--function-timing);
     height: 44px;
 }
 
-.community-text {
+.community-text,
+.mailing-text {
     display: inline-block;
     margin-bottom: 26px;
 
@@ -726,6 +738,40 @@ box-shadow 250ms var(--function-timing);
 .network .link:focus{
     background-color: var(--accent-color);
 }
+
+.mailing-btn{
+    letter-spacing: 0.06em;
+    padding-right: 28px;
+    padding-left: 28px;
+}
+
+.mailing-help {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 358px;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+}
+
+.mailing-help::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer form*/
+
+
+
 
 /* modal window styles*/
 
@@ -768,6 +814,10 @@ box-shadow 250ms var(--function-timing);
 
     min-width: 528px;
     min-height: 580px;
+    padding-left: 41px;
+    padding-right: 39px;
+    padding-top: 42px;
+    padding-bottom: 39px;
 
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -796,4 +846,102 @@ box-shadow 250ms var(--function-timing);
 
 .close-symbol{
     fill: #000000;
+}
+
+/* form for modal window*/
+
+.modal-title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    
+    color: var(--additional-page-color);
+}
+
+.modal-form{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.modal-field{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--page-main-color);
+}
+
+.modal-data{
+    margin-bottom: 20px;
+}
+
+.modal-text{
+    margin-bottom: 4px;
+}
+
+.commenty{
+    margin-bottom: 0;
+}
+
+.comment-help{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    resize: none;
+}
+
+.comment-help::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-agree{
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: var(--page-main-color);
+}
+
+.agree-link{
+    display: inline-block;
+    margin: 0;
+
+    color: var(--accent-color);
+}
+
+.modal-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.06em;
+    padding-right: 52px;
+    padding-left: 52px;
+}
+
+.modal-box{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
