@@ -232,7 +232,7 @@
             <div class="contact-main part">
                 <a href="./index.html" class="logo">
                     <span class="logo-web">Web</span>Studio</a>
-    
+
                 <address id="contact" class="connection">
                     <span class="contact-item">м. Київ, пр-т Лесі Українки, 26 </span>
                     <a class="contact-link contact-item" href="mailto:info@devstudio.com">
@@ -243,7 +243,7 @@
                     </a>
                 </address>
             </div>
-    
+
             <div class="community part">
                 <span class="community-text">приєднуйтесь</span>
                 <ul class="list community-list">
@@ -277,18 +277,23 @@
                     </li>
                 </ul>
             </div>
-    
+
             <div class="mailing part">
                 <span class="mailing-text">підпишіться на розсилку</span>
-                <form>
+                <form class="mailing-form">
                     <input class="mailing-help" type="email" name="user-mail" placeholder="E-mail" />
-    
+
                     <button class="mailing-btn buttons" type="submit">
-                        Підписатися
+                        <div class="mailing-btnbox">
+                            <span class="mailing-btntext">Підписатися</span>
+                            <svg class="send" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send" class="send-symbol"></use>
+                            </svg>
+                        </div>
                     </button>
                 </form>
             </div>
-    
+
         </div>
     </footer>
 </body>
