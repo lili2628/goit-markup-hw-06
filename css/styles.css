@@ -1044,16 +1044,17 @@ overflow: hidden;
 }
 
 .modal-box{
-        transform: fill 250ms var(--function-timing), 
+    transform: fill 250ms var(--function-timing), 
         border-color 250ms var(--function-timing);
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: 0;
 }
 
 .start-text{
     padding-left: 42px;
-    min-height: 42px;
+    height: 40px;
 }
 
 .modal-symbol{
